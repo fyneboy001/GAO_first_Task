@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow: hidden;
+}
 .Hero-Section {
   background-image: url("./assets/Hero-background.png");
   background-size: cover;
