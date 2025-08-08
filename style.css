@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow: hidden;
-}
 .Hero-Section {
   background-image: url("./assets/Hero-background.png");
   background-size: cover;
@@ -707,185 +703,145 @@ footer a {
 
 /* Devices ≤ 1200px (Large tablets and small desktops) */
 @media (max-width: 1200px) {
-  .carousel-wrapper {
-    flex-direction: column;
-    height: auto;
-    gap: 2rem;
-  }
-
-  .create-section {
-    flex-direction: column;
-    padding: 3rem 2rem;
-  }
-
-  .mockup-image,
-  .create-carousel {
-    width: 100%;
-  }
-
-  .create-carousel {
-    height: auto;
-  }
-
-  .Features-container {
-    flex-direction: column;
-  }
-
-  .testimonial-content {
-    width: 45%;
-  }
-
-  .pricing-card {
-    width: 30%;
-  }
-
-  .crew-container {
-    width: 45%;
-  }
 }
 
 /* Devices ≤ 768px (Tablets & landscape phones) */
 @media (max-width: 768px) {
-  nav {
-    padding: 20px;
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
   .carousel h2 {
-    font-size: 32px;
+    font-size: 20px;
   }
-
-  .carousel h5 {
-    font-size: 16px;
+  .carousel-wrapper {
+    height: 30vh;
+    gap: 1rem;
   }
-
   .Powerful-Section h3 {
-    font-size: 28px;
+    font-size: 20px;
   }
-
+  .Powerful-Section p {
+    font-size: 12px;
+  }
+  .create-section {
+    display: block;
+  }
+  .mockup-image,
+  .create-carousel {
+    width: 100%;
+  }
+  .create-carousel {
+    height: 50vh;
+  }
   .form-section {
+    display: flex;
     flex-direction: column;
-    padding: 3rem 1rem;
+    gap: 40px;
   }
-
   .digital-content,
   .form-container {
-    width: 100%;
+    width: 80%;
   }
 
   .Testimonial-Section h3 {
-    margin-left: 2rem;
     font-size: 30px;
-  }
-
-  .testimonial-content {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    margin-left: 0rem;
   }
+  /* .Testimonial-Section {
+    padding: 20px 50px;
+  } */
 
-  .Call-Section h2,
+  .Features-container {
+    gap: 40px;
+  }
+  .testimonial-content img {
+    height: 60px;
+    width: 60px;
+  }
+  .testimonial-content {
+    width: 60%;
+    padding: 40px 15px;
+  }
+  .testimonial-content p {
+    font-size: 12px;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .showcase-container {
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  .showcase-container img {
+    width: 200px;
+    height: 150px;
+  }
   .Team-Section h3 {
     font-size: 30px;
   }
-
-  .get-stared-container {
-    flex-direction: column;
-    gap: 20px;
+  .crews {
+    width: 100%;
+  }
+  .crew-container img {
+    height: 90px;
   }
 
-  .showcase-container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .view-container {
-    flex-direction: column;
+  .icons {
+    display: flex;
     gap: 10px;
-    width: 90%;
-    height: auto;
+    margin-top: 20px;
   }
-
-  .pricing-container {
-    flex-direction: column;
+  .icons img {
+    height: 10px;
+    width: 10px;
   }
-
-  .pricing-card {
-    width: 90%;
+  .paragraph {
+    font-size: 12px;
   }
-
   .Contact-Section {
-    flex-direction: column;
     padding: 20px;
-  }
-
-  .Contact-Info,
-  .Contact-form {
-    width: 100%;
-  }
-
-  .crew-container {
-    width: 100%;
-  }
-
-  .tour-links,
-  .privacy-links {
-    flex-direction: column;
     gap: 15px;
-    align-items: center;
+  }
+  .Contact-Info {
+    width: 20%;
+  }
+  .pricing-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-card {
+    line-height: 30px;
+    padding: 20px 50px;
+    width: 60%;
+  }
+  .pricing-card ul li img {
+    width: 10px;
+    height: 10px;
+  }
+  .pricing-card li {
+    font-size: 16px;
+  }
+  .pricing-btn {
+    width: 7rem;
+    font-size: 12px;
+  }
+  .tour-links a,
+  .privacy-links a,
+  .right {
+    font-size: 10px;
+  }
+  .tour-links-container,
+  .privacy-links-container {
+    gap: 8px;
+  }
+  footer {
+    padding: 20px 30px;
+  }
+  .privacy-links-container img {
+    height: 15px;
+    width: 15px;
   }
 }
 
 /* Devices ≤ 480px (Phones) */
 @media (max-width: 480px) {
-  .carousel h2 {
-    font-size: 24px;
-  }
-
-  .carousel h5 {
-    font-size: 14px;
-  }
-
-  .carousel-wrapper {
-    gap: 1rem;
-  }
-
-  .create-slide h2 {
-    font-size: 22px;
-  }
-
-  .symbol {
-    width: 100%;
-  }
-
-  .testimonial-content {
-    padding: 20px;
-    width: 100%;
-  }
-
-  .Team-Section h3 {
-    font-size: 24px;
-  }
-
-  .pricing-btn {
-    width: 100%;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .view-container button {
-    width: 100%;
-  }
-
-  .Contact-form textarea {
-    height: 80px;
-  }
 }
