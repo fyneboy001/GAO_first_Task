@@ -1,0 +1,887 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Hero-Section {
+  background-image: url("./assets/Hero-background.png");
+  background-size: cover;
+  height: auto;
+  color: white;
+  padding-bottom: 40px;
+}
+.Hero-Section,
+.Powerful-Section,
+.create-section,
+.form-section,
+.Call-Section,
+.Contact-Section,
+.Pricing-Section {
+  background-color: #2f1893;
+}
+.Hero-Section nav {
+  width: 100%;
+  padding: 40px;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list img {
+  margin-top: 7px;
+}
+.nav-list a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none;
+}
+.nav-list a:hover {
+  color: #f1eeee;
+}
+
+/* Carousel Style */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 80%;
+  height: 50vh;
+  margin: auto;
+  gap: 5rem;
+}
+
+.carousel {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+}
+.carousel h5 {
+  padding: 30px 0;
+  font-size: 20px;
+}
+.carousel h2 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.arrow {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-top: 25px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s ease;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.createact-btn {
+  background-color: #482be7;
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  outline: none;
+  border-radius: 20px;
+}
+
+/* Powerful section styling */
+.Powerful-Section {
+  background-image: url("./assets/powerfulbg.png");
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  align-content: center;
+  color: white;
+  padding: 7rem 0;
+}
+.Powerful-Section h5 {
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+.Powerful-Section h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/* Create section style */
+.create-section {
+  background-image: url("./assets/feature-background.png");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  min-height: auto; /* ensures there's enough height to center vertically */
+  padding-right: 7rem;
+  color: white;
+  padding: 5rem 0;
+}
+.mockup-image {
+  width: 40%;
+  height: auto; /* or a specific value like 300px */
+}
+.mockup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.create-carousel {
+  width: 60%;
+  height: 100vh; /* Important for vertical carousel */
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-carousel-track {
+  display: flex;
+  flex-direction: column; /* vertical */
+  transition: transform 0.5s ease-in-out;
+  height: 100%; /* ensures full height for transform */
+}
+
+.create-slide {
+  height: 100%;
+  flex-shrink: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.Features-container {
+  margin-top: 5rem;
+  display: flex;
+}
+.create-slide h2 {
+  margin-bottom: 20px;
+}
+.symbol {
+  height: 200px;
+  width: 40%;
+}
+.symbol h6 {
+  padding: 20px 0;
+}
+.create-slide img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.carouseldots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dots {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: background 0.3s;
+}
+
+.dots.active {
+  background: #fff;
+}
+
+/* FORM SECTION STYLE */
+.form-section {
+  background-image: url("./assets/formbackground.png");
+  background-size: cover;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5rem 0;
+}
+.digital-content {
+  width: 30%;
+}
+.digital-content h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+/* .or-line {
+  height: 50px;
+  width: 100%;
+  background-color: red;
+  display: flex;
+}
+.or-line hr {
+  rotate: 90deg;
+} */
+/* Form style */
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-switcher {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(79, 78, 78);
+}
+
+.form-switcher a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.form-switcher a.active {
+  border-bottom: 2px solid #007bff;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+}
+
+form.active {
+  display: flex;
+}
+
+.form-section input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-section button {
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.create-btn {
+  background-color: #25dac5;
+}
+.login-btn {
+  background-color: #1da1f2;
+}
+
+/* Testimonial Style */
+.Testimonial-Section {
+  background-color: #1e0e62;
+  height: auto;
+  width: 100%;
+  color: white;
+  padding: 5rem 0;
+}
+.Testimonial-Section h3 {
+  padding: 30px 0;
+  font-size: 40px;
+  margin-left: 11rem;
+}
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.testimonial-content {
+  height: 200px;
+  width: 35%;
+  display: flex;
+  border: 1px solid white;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.testimonial-content img {
+  width: 100px;
+  height: 100px;
+}
+.text-content p {
+  margin-bottom: 20px;
+}
+
+/* Call section style */
+.Call-Section {
+  background-image: url("./assets/callbackground.png");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 5rem 0;
+}
+.Call-Section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.get-stared-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 40px;
+  gap: 30px;
+}
+.get-stared-container img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.getstarted-btn {
+  background-color: #25dac5;
+  height: 40px;
+  width: 10rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+/* Showcase Styling */
+.Showcase-Section {
+  background-color: #2f1893;
+  height: auto;
+  color: white;
+  padding: 5rem 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.showcase-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+  margin-bottom: 40px;
+}
+.showcase-container h5,
+.showcase-container h6 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.view-container {
+  height: 60px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-container h4 {
+  font-size: 20px;
+}
+.view-container button {
+  height: 35px;
+  width: 8rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+}
+.showcase-container img {
+  width: 400px;
+  height: 200px;
+}
+
+.Team-Section {
+  background-color: #2f1893;
+  height: auto;
+  color: white;
+  padding-left: 7%;
+  padding-bottom: 5rem;
+}
+.Team-Section h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.paragraph {
+  padding-bottom: 60px;
+}
+.crews {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.crew-container {
+  height: 250px;
+  width: 30%;
+}
+.crew-container h4 {
+  padding: 10px 0;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Contact-Section Style */
+.Contact-Section {
+  background-image: url("./assets/contactbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 50px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.Contact-Info {
+  width: 40%;
+  min-width: 300px;
+  color: white;
+}
+
+.Contact-Info h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.Contact-Info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.Contact-form {
+  background-color: white;
+  color: black;
+  width: 40%;
+  min-width: 320px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Contact-form input,
+.Contact-form select,
+.Contact-form textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.Contact-form textarea {
+  border-radius: 10px;
+  resize: none;
+  padding-top: 10px;
+  height: 100px;
+}
+
+.dollar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.dollar > div {
+  flex: 1;
+}
+
+.send {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.send button {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #25dac5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send button:hover {
+  background-color: #20c5b0;
+}
+/* Pricing Section Styling */
+.Pricing-Section {
+  background-image: url("./assets/pricingbackground.png");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 40px 0;
+}
+.Pricing-Section h4,
+.Pricing-Section p {
+  text-align: center;
+}
+.Pricing-Section h4 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+.Pricing-Section p {
+  padding-bottom: 20px;
+}
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.pricing-card {
+  background-color: transparent;
+  height: auto;
+  line-height: 30px;
+  color: white;
+  width: 25%;
+  padding: 20px 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.pricing-card h6 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.pricing-card ul {
+  list-style: none;
+}
+.pricing-card ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.pricing-card ul li img {
+  width: 10px;
+  height: 10px;
+}
+.pricing-btn {
+  height: 40px;
+  width: 10rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.pricing-btn:hover {
+  background-color: #e93a7d;
+}
+.get {
+  background-color: #e93a7d;
+  border: none;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2f1893;
+  height: auto;
+  padding: 20px 50px;
+  color: white;
+}
+.tour-links,
+.privacy-links {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+.privacy-links {
+  border-bottom: 1px solid white;
+}
+.tour-links {
+  padding-top: 20px;
+}
+.tour-links-container,
+.privacy-links-container {
+  display: flex;
+  gap: 25px;
+}
+.privacy-links-container img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+/* ===== Responsive Styling ===== */
+
+/* Devices ≤ 1200px (Large tablets and small desktops) */
+@media (max-width: 1200px) {
+  .carousel-wrapper {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .create-section {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .mockup-image,
+  .create-carousel {
+    width: 100%;
+  }
+
+  .create-carousel {
+    height: auto;
+  }
+
+  .Features-container {
+    flex-direction: column;
+  }
+
+  .testimonial-content {
+    width: 45%;
+  }
+
+  .pricing-card {
+    width: 30%;
+  }
+
+  .crew-container {
+    width: 45%;
+  }
+}
+
+/* Devices ≤ 768px (Tablets & landscape phones) */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .carousel h2 {
+    font-size: 32px;
+  }
+
+  .carousel h5 {
+    font-size: 16px;
+  }
+
+  .Powerful-Section h3 {
+    font-size: 28px;
+  }
+
+  .form-section {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .digital-content,
+  .form-container {
+    width: 100%;
+  }
+
+  .Testimonial-Section h3 {
+    margin-left: 2rem;
+    font-size: 30px;
+  }
+
+  .testimonial-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Call-Section h2,
+  .Team-Section h3 {
+    font-size: 30px;
+  }
+
+  .get-stared-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .showcase-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .view-container {
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    height: auto;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+
+  .Contact-Section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Contact-Info,
+  .Contact-form {
+    width: 100%;
+  }
+
+  .crew-container {
+    width: 100%;
+  }
+
+  .tour-links,
+  .privacy-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+/* Devices ≤ 480px (Phones) */
+@media (max-width: 480px) {
+  .carousel h2 {
+    font-size: 24px;
+  }
+
+  .carousel h5 {
+    font-size: 14px;
+  }
+
+  .carousel-wrapper {
+    gap: 1rem;
+  }
+
+  .create-slide h2 {
+    font-size: 22px;
+  }
+
+  .symbol {
+    width: 100%;
+  }
+
+  .testimonial-content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .Team-Section h3 {
+    font-size: 24px;
+  }
+
+  .pricing-btn {
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .view-container button {
+    width: 100%;
+  }
+
+  .Contact-form textarea {
+    height: 80px;
+  }
+}
