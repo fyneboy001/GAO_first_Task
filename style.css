@@ -856,6 +856,9 @@ footer a {
   .digital-content p {
     font-size: 8px;
   }
+  .digital-content p {
+    font-size: 10px;
+  }
   .showcase-container img {
     width: 150px;
     height: 100px;
