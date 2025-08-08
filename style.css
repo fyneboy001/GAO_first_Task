@@ -844,4 +844,63 @@ footer a {
 
 /* Devices ≤ 480px (Phones) */
 @media (max-width: 480px) {
+  .nav-item {
+    font-size: 13px;
+  }
+  .nav-list {
+    gap: 15px;
+  }
+  .Powerful-Section p,
+  .create-slide p,
+  .carousel p {
+    font-size: 10px;
+  }
+  .showcase-container img {
+    width: 150px;
+    height: 100px;
+  }
+  .paragraph {
+    padding-right: 20px;
+    font-size: 11px;
+  }
+  .crew-container h4 {
+    font-size: 13px;
+  }
+  .pricing-card {
+    line-height: 30px;
+    padding: 20px 20px;
+    width: 80%;
+  }
+  .tour-links,
+  .privacy-links {
+    flex-direction: column;
+    gap: 9px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .tour-links a,
+  .privacy-links a,
+  .right {
+    font-size: 8px;
+  }
+  footer {
+    padding: 20px 15px;
+  }
+  .privacy-links-container img {
+    height: 10px;
+    width: 10px;
+  }
+  .right {
+    text-align: center;
+  }
+  .pricing-container {
+    padding: 10px;
+  }
+  .Pricing-Section h4 {
+    font-size: 20px;
+  }
+  .Pricing-Section p {
+    font-size: 10px;
+  }
 }
