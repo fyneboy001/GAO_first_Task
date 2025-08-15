@@ -7,18 +7,18 @@ const carouselContent = [
   },
   {
     name: "Startup 3",
-    title: "Design Like a Pro",
-    text: "With pre-made components and design blocks, you can build stunning websites in minutes without any design skills.",
+    title: "Forget About Code",
+    text: "Startup Frameworks give you complete freedom over your creative process – you don't have to think about any technical aspects. There are no limits and absolutely no coding.",
   },
   {
     name: "Startup 3",
-    title: "Speed Up Development",
-    text: "Streamline your workflow with tools that boost your productivity and reduce coding time significantly.",
+    title: "Forget About Code",
+    text: "Startup Frameworks give you complete freedom over your creative process – you don't have to think about any technical aspects. There are no limits and absolutely no coding.",
   },
   {
     name: "Startup 3",
-    title: "Launch Faster",
-    text: "From idea to launch in record time – bring your projects to life faster than ever before.",
+    title: "Forget About Code",
+    text: "Startup Frameworks give you complete freedom over your creative process – you don't have to think about any technical aspects. There are no limits and absolutely no coding.",
   },
 ];
 
